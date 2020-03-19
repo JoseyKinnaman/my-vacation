@@ -41,3 +41,11 @@ img {
   animation: flip-it linear 5s infinite;
   width: 150px;
 }
+.packages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.third {
+  width: 30%;
+}
