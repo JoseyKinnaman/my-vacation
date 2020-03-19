@@ -1,3 +1,16 @@
+@media screen and (max-width: 768px) {
+  body {
+    background-color: yellowgreen;
+    color: rgb(74, 165, 130);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: teal;
+  }
+}
+
 img:hover {
   transform: scaleX(-1);
 }
@@ -12,4 +25,19 @@ img {
   box-shadow: 2px 5px 8px gray;
   border: 5px solid rgb(3, 0, 0);
   margin-bottom: 2.5rem;
+}
+@keyframes flip-it {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.flip {
+  animation: flip-it linear 5s infinite;
+  width: 150px;
 }
